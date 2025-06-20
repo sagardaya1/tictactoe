@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Snake Animation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <style>
+ *{
+  margin: 0;
+  padding: 0;
+ }
+ body{
+  text-align: center;
+  background-color: burlywood;
+ }
+.game{
+   display: grid; 
+  grid-template-columns: repeat(3,100px);
+   justify-content: center;
+  grid-gap: 10px;
+}
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 3px solid blueviolet;
+
+  cursor: pointer;
+}
+#reset{
+  padding: 1rem;
+  font-size: 1.5rem;
+
+}
+#newbtn{
+  
+  padding: 1rem;
+  font-size: 1.5rem;
+
+
+}
+#msg{
+  color: white;
+  font-size: 8vmin;
+
+}
+.hide{
+  display: none;
+}
+  </style>
+  <div class="message hide">
+    <p id="msg">Winner</p>
+      <button id="newbtn">New Game</button>
+  </div>
+ <div class="main">
+    <h2>TIC TAC TOE</h2>
+    <div class="game">
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button> 
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+    </div>
+    <button id="reset">reset</button>
+ </div>
+
+<script src="script.js"></script>
+  
+
+</body>
+</html>
+
